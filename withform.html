@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Center</title>
+</head>
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+     /* CSS  RESET */
+     body{
+        /* font-family: 'Baloo Bhaina 2', cursive; */
+         color: white;
+         margin: 0px;
+         padding: 0px;
+         background: url('img/yogabeach.jpg');
+         background-size: cover;
+     }
+     .left{
+         display: inline-block;
+         /* border: 2px solid red; */
+         position: absolute;
+         left: 20px;
+         top: 10px;
+     }
+     .left img{
+         width: 75px;
+     }
+     .left div{
+         text-align: center;
+     }
+     .mid{
+         /* border: 2px solid blue; */
+         display: block;
+         margin: -4px auto;
+         width: 45%;
+         font-size: 20px;
+         background-color:lightgrey;
+         
+     }
+     .right{
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 10px;
+        /* border: 2px solid yellow; */
+     }
+     .nav{
+         display: inline-block;
+         
+     }
+     .nav li{
+         display: inline-block;
+         font-size: 20px;
+     }
+     .nav li a{
+         color: #800000;
+         text-decoration: none;
+         padding: 22px 12px;
+     }
+     .nav li a:hover, .nav li a.active{
+          text-decoration: underline;
+          color: blueviolet;
+     }
+     .btn{
+        margin: 0px 5px;
+        color: white;
+        background-color: black;
+        padding: 4px 10px;
+        border: 2px solid mistyrose;
+        border-radius: 12px;
+        cursor: pointer;
+     }
+     .btn:hover{
+         /* color: blue; */
+         background-color: rgb(70, 91, 110);
+         text-decoration: underline;
+         /* color: blue; */
+     }
+     .container{
+        border: 2px solid white;
+        margin: 110px 780px;
+        padding: 5px 5px;
+        border-radius: 12px;
+        width: 270px;
+        /* background: rgb(179, 181, 182); */
+        color: white;
+        cursor: pointer;
+        height:350px;
+     }
+     .form input{
+         text-align: center;
+         display: block;
+         padding:5px;
+         border: 2px solid black;
+         width: 250px;
+         font-size: 12px;
+         border-radius: 5px;
+         margin: 5px;
+         font-size: 15px;
+     }
+     h2{
+    text-align: center;
+    text-decoration: underline;
+     }
+     .container .btn{
+         text-align: center;
+         display: block;
+         width: 150px;
+         margin: auto;
+         border-radius: 10px;
+         padding: 8px;
+         height: 40px;
+     }
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+             <img src="img/ys.jpg" alt="logo">
+             <div>Yoga</div>
+             <div>Center</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+       <ul class="nav">
+           <li ><a href="#" class="active">Home</a></li>
+           <li><a href="#">About us</a></li>
+           <li><a href="#">Plans</a></li>
+           <li><a href="#">Contact us</a></li>
+           
+       </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+        <button class="btn">Call us now</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+    <h2>Join the Best Yoga Center</h2>   
+    <form action="No.php">
+        <div class="form">
+            <input type="text" name=" " placeholder="Enter your Name">
+        </div>
+        <div class="form">
+            <input type="text" name=" " placeholder="Enter your Age">
+        </div>
+        <div class="form">
+            <input type="text" name=" " placeholder="Enter your Gender">
+        </div>
+        <div class="form">
+            <input type="text" name=" " placeholder="Enter your Locality">
+        </div>
+        <div class="form">
+            <input type="text" name=" " placeholder="Enter your Contact Number">
+        </div>
+        <div class="form">
+            <input type="text" name=" " placeholder="Enter your Email id">
+        </div>
+    </form>
+        <button class="btn">Submit</button>
+    </div>
+    
+</body>
+</html>
